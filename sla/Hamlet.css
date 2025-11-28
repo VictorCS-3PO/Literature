@@ -1,51 +1,56 @@
+
 :root{
-  background-color: #000;
-  color:gold;
-  --radius: 12px;
-  --gap: 20px;
-  --max-width: 1200px;
+	--bg:#0f1720;
+	--card: rgba(255,255,255,0.03);
+	--accent:#ffd166;
+	--muted: #cbd5e1;
 }
-
-*{ box-sizing: border-box; margin:0; padding:0; font-family: "Merriweather", "Roboto", serif; -webkit-font-smoothing:antialiased; }
-
-html,body{
-  height:100%;
-  color:gold;
-}
-
-.container{
-  width: min(96%, var(--container-max));
-  margin: 28px auto;
-  padding: 18px;
+body{
+	margin:0;
+	font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif;
+	background: var(--bg);
+	color: #fff;
+	padding:24px;
 }
 
 header{
-  display:flex;
-  align-items:center;
-  justify-content:space-between;
-  gap: var(--gap);
-  padding: 14px 18px;
-  background-color: #6b3f1a;
-  border-radius: calc(var(--radius) / 1.2);
-  border: 1px solid rgba(212,175,55,0.08);
-  box-shadow: var(--shadow);
+	display:flex;
+	align-items:center;
+	gap:20px;
+	padding:14px 18px;
+	background-color: #6b3f1a;
+	box-shadow: 0 4px 12px rgba(0,0,0,0.5);
 }
-header .logo{
- width:120px; 
-  height:auto; 
-  border-radius:8px; 
-  filter:none; 
+.logo{
+    width:120px;
+    height:auto;
+    border-radius:8px;
 }
-header nav{ display:flex; gap:18px; align-items:center; }
-header a{
-  color: var(--accent);
-  text-decoration:none;
-  font-weight:700;
-  padding:8px 12px;
-  border-radius:8px;
-  transition:.15s ease, color .12s ease, transform .12s ease;
+.opcoes{
+    display:flex;
+    gap:22px;
+    margin-left:auto;
+    align-items:center;
 }
-header a:hover{ background: rgba(255,215,0,0.06); color: var(--accent-2); transform: translateY(-2px); }
+.opcoes a{
+    color:#d4af37;
+    text-decoration:none;
+    padding:8px 12px;
+    border-radius:8px;
+    font-weight:700;
+    letter-spacing:0.6px;
+    transition: 0.14s ease, color 0.12s ease, transform 0.12s ease;
+}
+.opcoes a:hover{
+    background: rgba(255,215,0,0.06);
+    color:#ffd700;
+    transform:translateY(-2px);
+}
+h1{
+    margin:8px 0 22px;
+    color:var(--accent);
+    text-align:center;
+}
 
 
 .secao-principal{

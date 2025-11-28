@@ -22,7 +22,6 @@ body{
   color: white;
   -webkit-font-smoothing:antialiased;
 }
-
 /* cartão central (glass) */
 .wrapper{
   width: min(420px, 92%);
@@ -157,4 +156,5 @@ body{
   .wrapper h1{ font-size: 26px; }
   .box input{ padding-right: 44px; font-size: 15px; }
 }
+
 a{ color: var(--accent); }
